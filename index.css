@@ -563,8 +563,8 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .about__photo {
-    width: 100%;
-    max-width: 320px; /* reduce size of photo */
+    width: 450%;
+    max-width: 520px; /* reduce size of photo */
     height: auto;
     border-radius: 20px;
     border: 4px solid var(--pink);
