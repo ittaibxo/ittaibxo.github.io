@@ -188,7 +188,7 @@ p {
 /* --------------------------------------- */
 
 a {
-    color: var(--white);
+    color: var(--black);
     font-weight: 400;
     font-family: 'Jost', sans-serif;
     transition: all .2s;
@@ -210,7 +210,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .link:hover {
-    color: var(--pink);
+    color: var(--black);
 }
 
 .btn {
@@ -404,13 +404,15 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+    background: linear-gradient(rgba(255,255,255, 0.5), rgba(255,255,255, 0.5)), 
         url('./images/header.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    color: var(--black);  /* dark text for light background */
     font-size: var(--font-size-normal);
+    text-shadow: none; /*remove any dark blur */
 }
 
 .header__text {
@@ -549,13 +551,18 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .about__photo-container {
-    margin-bottom: var(--gutter-normal);
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--gutter-medium);
 }
 .about__photo {
-    width: 80px;          /* photo takes 80% of mobile width */
-    max-width: 250%;       /* responsive for mobile */
+    width: 100%;          /* photo takes 80% of mobile width */
+    max-width: 350px;       /* responsive for mobile */
     border-radius: 20px;   /* rounded corners */
     border: 4px solid var(--pink); /* accent border for light theme */
+    display: block;
+    margin: 0 auto; /*center the image */
+    height: auto;
 }
 
 @media(min-width: 901px) {
@@ -582,9 +589,14 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Footer ----- */
 /* --------------------------------------- */
 
+/* REMOVE SOME OF THE SOCIAL BUTTONS, ONLY ADD LINKEDIN AND GITHUB */
+
 .footer {
     text-align: center;
     padding: var(--gutter-medium) 0 var(--gutter-normal);
+    background-color: var(--white);  /* light background */
+    color: var(--black);  /* dark text for readability */
+    border-top: 2px solid var(--pink);  /* subtle accent line */
 }
 
 .footer__social-links {
