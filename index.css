@@ -590,7 +590,32 @@ body:not(.user-is-tabbing) a:focus {
         padding-top: 2rem;  /* adds spacing above photo */
     }
 }
+/* --- ✨ New additions for tagline + highlights --- */
+    .about__tagline {
+        font-size: 1.8rem;
+        color: var(--pink);
+        text-align: center;
+        margin-bottom: 2rem;
+        letter-spacing: 1px;
+}
 
+    .about__highlights {
+        list-style: none;
+        padding: 0;
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+}
+
+    .about__highlights li {
+        background: rgba(255, 50, 88, 0.1);
+        border: 1px solid var(--pink);
+        border-radius: 10px;
+        padding: 0.8rem 1.5rem;
+        font-size: 1.4rem;
+        color: var(--white-1);
+}
 /* --------------------------------------- */
 /* ----- Contact ----- */
 /* --------------------------------------- */
