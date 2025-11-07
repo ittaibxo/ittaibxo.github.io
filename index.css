@@ -508,28 +508,34 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
-/* ----- Clients ----- */
+/* ----- Skills ----- */
 /* --------------------------------------- */
 
 .skills__logos {
     display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem; /* space between icons */
+    filter: none;
+    padding: var(--gutter-normal);
 }
 
 .skills__logo {
-    height: 6.5rem;
-    max-width: 18rem;
+    height: 4rem;
+    max-width: 8rem;
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.skills__logo:hover {
+    transform: scale(1.05);
+    opacity: 1;
 }
 
-@media(max-width: 1240px) {
+@media(max-width: 768px) {
     .skills__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
-
-    .skills__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
+        height: 3.5rem;
+        max-width: 7rem;
     }
 }
 
