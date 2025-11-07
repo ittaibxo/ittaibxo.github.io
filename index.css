@@ -522,8 +522,8 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .skills__logo {
-    height: 12rem;
-    max-width: 24rem;
+    height: 22rem;
+    max-width: 42rem;
     opacity: 0.9;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -534,8 +534,8 @@ body:not(.user-is-tabbing) a:focus {
 
 @media(max-width: 768px) {
     .skills__logos {
-        height: 6rem;
-        max-width: 12rem;
+        height: 22rem;
+        max-width: 42rem;
     }
 }
 
