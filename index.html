@@ -26,10 +26,12 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          <li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
         </ul>
       </nav>
     </div>
@@ -114,6 +116,129 @@
           <div class="skills__card"><span>Terraform (IaC)</span></div>
           <div class="skills__card"><span>Linux CLI</span></div>
           <div class="skills__card"><span>CI/CD</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Resume ***** -->
+    <!--
+      This is your resume rendered directly on the page (no download / no external link).
+      Fill in the bracketed [ ... ] placeholders with your real details.
+      Add or remove .resume__item blocks as needed.
+    -->
+
+    <section class="resume" id="resume">
+      <div class="row">
+        <h2>Resume</h2>
+
+        <div class="resume__summary">
+          <p>
+            Cybersecurity graduate student with a non-traditional background in Political Science,
+            focused on cloud security, AI, network defense, and building secure, human-centered systems.
+            Hands-on experience with AWS, network traffic analysis, and infrastructure as code.
+          </p>
+        </div>
+
+        <div class="resume__block">
+          <h3 class="resume__heading">Education</h3>
+          <div class="resume__item">
+            <div class="resume__item-head">
+              <span class="resume__role">Master of Science in Cybersecurity</span>
+              
+            </div>
+            <p class="resume__org">North Carolina A&T University, Greensoro, North Carolina]</p>
+            
+          </div>
+          <div class="resume__item">
+            <div class="resume__item-head">
+              <span class="resume__role">Bachelor of Arts in Political Science</span>
+              
+            </div>
+            <p class="resume__org">Hunter College,  New York, New York</p>
+            
+          </div>
+        </div>
+
+        <div class="resume__block">
+          <h3 class="resume__heading">Experience</h3>
+          <div class="resume__item">
+            <div class="resume__item-head">
+              <span class="resume__role">[Job Title]</span>
+              <span class="resume__date">[Start] – [End]</span>
+            </div>
+            <p class="resume__org">[Company / Organization], [City, State]</p>
+            <ul class="resume__points">
+              <li>[Accomplishment or responsibility — start with an action verb and add a number where you can.]</li>
+              <li>[Another bullet — what you did and the impact.]</li>
+            </ul>
+          </div>
+          <div class="resume__item">
+            <div class="resume__item-head">
+              <span class="resume__role">[Job Title]</span>
+              <span class="resume__date">[Start] – [End]</span>
+            </div>
+            <p class="resume__org">[Company / Organization], [City, State]</p>
+            <ul class="resume__points">
+              <li>[Accomplishment or responsibility.]</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resume__block">
+          <h3 class="resume__heading">Certifications</h3>
+          <ul class="resume__points">
+            <li>CompTIA Security+ — In Progress </li>
+            <li>ISC2 Certified in Cybersecurity (CC) — In Progress </li>
+            <li>CompTIA A+ </li>
+          </ul>
+        </div>
+
+        <div class="resume__block">
+          <h3 class="resume__heading">Technical Skills</h3>
+          <p class="resume__skills">
+            Python &middot; AWS (S3, Lambda, DynamoDB, IAM) &middot; Terraform &middot; CI/CD &middot;
+            Wireshark &middot; Network &amp; Packet Analysis &middot; Linux CLI &middot; Firewall Configuration
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Blog ***** -->
+    <!--
+      Manual blog-post cards. For each post you publish on Medium, duplicate a
+      .blog__card block and fill in the title, date, blurb, and Medium URL.
+      Replace the profile link below with your Medium profile URL.
+    -->
+
+    <section class="blog" id="blog">
+      <div class="row">
+        <h2>Blog</h2>
+        <p class="blog__intro">
+          I write about what I'm learning in cybersecurity and cloud. Read everything on
+          <a href="https://medium.com/@taiboudiallo" target="_blank" rel="noopener noreferrer" class="blog__profile-link">my Medium</a>.
+        </p>
+
+        <div class="blog__grid">
+          <a href="https://medium.com/@taiboudiallo/what-is-cybersecurity-why-it-matters-for-beginners-098648f9a218" target="_blank" rel="noopener noreferrer" class="blog__card">
+            <span class="blog__date">[Month Year]</span>
+            <h3 class="blog__title">What Is Cybersecurity & Why It Matters (For Beginners)</h3>
+            <p class="blog__excerpt">I aspire to be a Cybersecurity expert and help make this world a safer digital place for everyone.</p>
+            <span class="blog__read">Read on Medium →</span>
+          </a>
+
+          <a href="https://medium.com/@YOUR-MEDIUM-USERNAME/POST-SLUG" target="_blank" rel="noopener noreferrer" class="blog__card">
+            <span class="blog__date">[Month Year]</span>
+            <h3 class="blog__title">[Post title goes here]</h3>
+            <p class="blog__excerpt">[One or two sentences summarizing the post.]</p>
+            <span class="blog__read">Read on Medium →</span>
+          </a>
+
+          <a href="https://medium.com/@YOUR-MEDIUM-USERNAME/POST-SLUG" target="_blank" rel="noopener noreferrer" class="blog__card">
+            <span class="blog__date">[Month Year]</span>
+            <h3 class="blog__title">[Post title goes here]</h3>
+            <p class="blog__excerpt">[One or two sentences summarizing the post.]</p>
+            <span class="blog__read">Read on Medium →</span>
+          </a>
         </div>
       </div>
     </section>

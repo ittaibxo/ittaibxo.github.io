@@ -626,6 +626,145 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
+/* ----- Resume ----- */
+/* --------------------------------------- */
+
+.resume__summary p {
+    max-width: var(--container-normal-width);
+    color: var(--white-1);
+    font-size: var(--font-size-normal);
+}
+
+.resume__block {
+    margin-top: var(--gutter-medium);
+}
+
+.resume__heading {
+    font-size: var(--font-size-medium);
+    color: var(--gold);
+    margin-bottom: var(--gutter-small);
+    padding-bottom: var(--gutter-small);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.resume__item {
+    margin-bottom: var(--gutter-normal);
+}
+
+.resume__item-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+}
+
+.resume__role {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: var(--font-size-medium-1);
+    color: var(--white);
+}
+
+.resume__date {
+    font-family: var(--font-body);
+    font-size: var(--font-size-small);
+    color: var(--steel);
+    white-space: nowrap;
+}
+
+.resume__org {
+    color: var(--silver);
+    font-style: italic;
+    margin: 0.5rem 0 1rem;
+}
+
+.resume__desc {
+    color: var(--white-1);
+    margin: 0;
+}
+
+.resume__points {
+    list-style-position: outside;
+    padding-left: 2rem;
+    color: var(--white-1);
+}
+
+.resume__points li {
+    margin-bottom: 0.8rem;
+}
+
+.resume__skills {
+    color: var(--white-1);
+    margin: 0;
+    line-height: 2;
+}
+
+/* --------------------------------------- */
+/* ----- Blog ----- */
+/* --------------------------------------- */
+
+.blog__intro {
+    max-width: var(--container-normal-width);
+    color: var(--white-1);
+    font-size: var(--font-size-normal);
+    margin-bottom: var(--gutter-medium);
+}
+
+.blog__profile-link {
+    color: var(--gold);
+    border-bottom: 1px solid var(--gold);
+}
+
+.blog__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 3rem;
+}
+
+.blog__card {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    background: var(--bg-2);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    text-decoration: none;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.blog__card:hover {
+    transform: translateY(-6px);
+    border-color: var(--gold);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.35);
+}
+
+.blog__date {
+    font-size: 1.4rem;
+    color: var(--steel);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.blog__title {
+    font-size: var(--font-size-medium);
+    color: var(--white);
+    margin: 1.2rem 0;
+}
+
+.blog__excerpt {
+    color: var(--white-1);
+    margin: 0 0 2.5rem;
+    flex: 1;
+}
+
+.blog__read {
+    color: var(--gold);
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+
+/* --------------------------------------- */
 /* ----- About ----- */
 /* --------------------------------------- */
 
