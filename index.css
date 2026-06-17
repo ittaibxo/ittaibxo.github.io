@@ -639,6 +639,10 @@ body:not(.user-is-tabbing) a:focus {
     margin-top: var(--gutter-medium);
 }
 
+.resume__block--first {
+    margin-top: 0;
+}
+
 .resume__heading {
     font-size: var(--font-size-medium);
     color: var(--gold);
@@ -698,6 +702,11 @@ body:not(.user-is-tabbing) a:focus {
     color: var(--white-1);
     margin: 0;
     line-height: 2;
+}
+
+.resume__link {
+    color: var(--gold);
+    border-bottom: 1px solid var(--gold);
 }
 
 /* --------------------------------------- */
